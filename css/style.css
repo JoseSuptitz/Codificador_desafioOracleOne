@@ -1,0 +1,258 @@
+body {
+    background-color: #E5E5E5;;
+}
+
+#LogoImage {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+/* AREA DE TEXTO */
+
+#TextArea {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    resize: none;
+    left: 15%;
+    top: 168px;
+    border: none;
+    background: transparent;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+#textoh2{
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-size: 18px;
+}
+
+/* FIM AREA DE TEXTO */
+
+
+/* BOTÕES */ 
+
+.container {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.cptbutton {
+    padding: 15px;
+    margin-right: 50px;
+    width: 250px;
+
+    border-radius: 24px;
+    border: 2px solid #0A3871;
+
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#cripto {
+    background-color: #0A3871;
+    color: #E5E5E5;
+}
+
+#descripto {
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+/* FIM BOTÕES */ 
+
+/* SIDEBOX MAIOR QUE 900PX */
+
+@media screen and (min-width: 1000px) {
+    #sidebox {
+        position: absolute;
+        width: 400px;
+        height: fit-content;
+        left: 70%;
+        top: 70px;
+        padding-top: 30px;
+        word-wrap: break-word;
+    
+    
+    background: #FFFFFF;
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    }
+
+    #pessoaSidebar {
+        position:relative;
+        top:20%;
+        left:20%;
+        margin-top:10px;
+        margin-left:10px;
+    }
+
+    .textosidebox {
+        position: relative;
+        text-align: center;
+        top: 40%;
+        padding: 10px;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+    }
+
+    #botaocopia {
+        position: absolute;
+        left: 78%;
+        padding: 10px;
+        width: 150px;
+        
+        background: #FFFFFF;
+        border: 0px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        font-size: 20px;
+    }
+  }
+
+  /* FIM SIDEBOX */
+
+/* SIDEBOX MAIOR QUE 561PX */
+@media screen and (min-width: 561px) and (max-width: 999px){
+    #sidebox {
+        position: absolute;
+        max-width: 700px;     
+        height: fit-content;
+        word-wrap: break-word;
+        top: 85%;
+    
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 24px;
+    }
+
+    #pessoaSidebar {
+        display: none;
+    }
+
+    .textosidebox {
+        margin: 10px;
+        margin-left: 25px;
+        width: auto;
+
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+    }
+
+    #textoh1{
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    #botaocopia {
+        position: absolute;
+        left: 3%;
+        top: 75%;
+        padding: 10px;
+        width: 150px;
+        
+        background: #FFFFFF;
+        border: 0px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        font-size: 20px;
+    }
+}
+/* FIM SIDEBOX */
+
+/* SIDEBOX MAIOR QUE 320PX */
+@media screen and (min-width: 320px) and (max-width: 560px){
+    #sidebox {
+        position: absolute;
+        background: #FFFFFF;
+        max-width: 400px;
+        margin: 10px;
+        width: fit-content;
+        height: fit-content;
+        word-wrap: break-word;
+    
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 24px;
+        top: 80%;
+    }
+
+    #pessoaSidebar {
+        display: none;
+    }
+
+    /* BOTÕES, ÁREA DO TEXTO E TEXTO */
+
+    .container {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        top: 55%;
+        left: 15%;
+    }
+
+    .cptbutton {
+        margin: 5px;
+    }
+
+    #TextArea{
+        width: 300px;
+        height: 200px;
+    }
+
+    .textosidebox {
+        margin: 5px;
+        margin-left: 50px;
+
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+    }
+
+    #botaocopia {
+        position: absolute;
+        left: 3%;
+        top: 75%;
+        padding: 10px;
+        width: 150px;
+        
+        background: #FFFFFF;
+        border: 0px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        font-size: 20px;
+    }
+
+    /* FIM BOTÕES, ÁREA DO TEXTO E TEXTO */
+}
+
